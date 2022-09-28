@@ -46,6 +46,10 @@ function generatePassword(lower, upper, number, symbol, length) {
     }
 }
 
+const finalPassword = generatePassword.slice(0, length)
+
+return finalPassword
+
 function getRandomLower() {
     return String.fromCharCode(Math.floor(Math.random() * 26) +
         97)
