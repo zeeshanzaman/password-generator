@@ -15,8 +15,5 @@ function getRandomNumber() {
 
 function getRandomSymbol() {
     const symbols = '!@#$%^&*(){}[]=<>,.'
-    return symbols[0]
+    return symbols[Math.floor(Math.random() * symbols.length)]
 }
-
-
-console.log(getRandomSymbol())
