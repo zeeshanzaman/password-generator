@@ -17,7 +17,14 @@ const randomFunc = {
 
 generateEl.addEventListener('click', () => {
     const length = +lengthEl.value
-    console.log(length)
+    const hasLower = lowercaseEl.checked
+    const hasUpper = uppercaseEl.checked
+    const hasNumber = numbersEl.checked
+    const hasSymbol = symbolsEl.checked
+
+
+    resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
+
 })
 
 
