@@ -8,14 +8,17 @@ const generateEl = document.getElementById('generate')
 const clipboardEl = document.getElementById('clipboard')
 
 
-
-
 const randomFunc = {
     lower: getRandomLower,
     upper: getRandomUpper,
     number: getRandomNumber,
     symbol: getRandomSymbol
 }
+
+generateEl.addEventListener('click', () => {
+    const length = +lengthEl.value
+    console.log(length)
+})
 
 
 function getRandomLower() {
